@@ -28,11 +28,11 @@ jobs:
       - name: upload artifact
         uses: actions/upload-artifact@v7
         with: 
-          name: dist-files
+          name: dist-files1
           path: |
             dist
             package.json
-            
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
